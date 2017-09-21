@@ -78,6 +78,7 @@ int main()
 	while (keepFighting)
 	{
 		std::cout << "You fired your missile" << std::endl;
+		//bases missile distance off of targets distance
 		if (missile.target.coordinates.x > missile.target.coordinates.y)
 		{
 			missile.coordinates.setPos(missile.target.coordinates.x);
